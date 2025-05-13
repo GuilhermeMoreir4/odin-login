@@ -21,6 +21,15 @@ main{
     gap: 30px;
 }
 
+input{
+    border-radius: 10px;
+    border: 2px solid plum;
+}
+
+input:invalid{
+    border-color: red;
+}
+
 .form-block{
     display: flex;
     width: 40%;
@@ -44,14 +53,14 @@ label, input{
 }
 
 button{
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     color:white;
     background-color: plum;
     align-self: flex-start;
     margin-left: 30px;
     border:none;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 5px black;
 }
 
 #link{

@@ -36,17 +36,17 @@
             <div class="form-block">
 
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" id = "phone">
+            <input type="text" pattern = "^\(\d{2}\) \d{4,5}-\d{4}$" title = "Enter a valid number"  id = "phone">
             </div>
 
             <div class="form-block">
             <label for="password">PASSWORD</label>
-            <input type="password">
+            <input type="password" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title = "Need to be more than 8 characters and less than 12, one uppercase/lower, number and !@#$%^&*_=+-">
             </div>  
 
             <div class="form-block">
             <label for="confirm">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm">
+            <input type="password" id="confirm" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title = "Need to be more than 8 characters and less than 12, one uppercase/lower, number and !@#$%^&*_=+-">
             </div> 
         </form>
 
